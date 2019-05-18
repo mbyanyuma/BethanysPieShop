@@ -1,16 +1,5 @@
-﻿@model IEnumerable<BethanysPieShop.Models.Pie> 
+﻿@model IEnumerable<BethanysPieShop.Models.Pie>
 
-
-
-<!DOCTYPE html>
-
-<html>
-
-<head>
-    <meta name="viewport" content="width=device-width"/>
-</head>
-
-<body>
 <h2>@ViewBag.Title</h2>
 
 @foreach (var pie in Model)
@@ -20,6 +9,3 @@
         <h3>@pie.Price.ToString("C")</h3>
     </div>
 }
-</body>
-
-</html>
