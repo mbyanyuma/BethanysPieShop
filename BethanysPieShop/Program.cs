@@ -16,7 +16,6 @@ namespace BethanysPieShop
     {
         public static void Main(string[] args)
         {
-            //CreateWebHostBuilder(args).Build().Run();
 
             var host = CreateWebHostBuilder(args).Build();
 
@@ -28,11 +27,13 @@ namespace BethanysPieShop
                     var context = services.GetRequiredService<PieDbContext>();
                     PieDbInitializer.Seed(context);
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     //logger will be used in future commits
                 }
             }
+
+            host.Run();
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
