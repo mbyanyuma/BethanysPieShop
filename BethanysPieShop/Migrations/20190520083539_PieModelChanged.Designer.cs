@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BethanysPieShop.Migrations
 {
-    [DbContext(typeof(PieDbContext))]
+    [DbContext(typeof(BethanyDbContext))]
     [Migration("20190520083539_PieModelChanged")]
     partial class PieModelChanged
     {

@@ -6,13 +6,14 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BethanysPieShop.Models
 {
-    public class PieDbContext : DbContext
+    public class BethanyDbContext : DbContext
     {
-        public PieDbContext(DbContextOptions<PieDbContext> options) : base(options)
+        public BethanyDbContext(DbContextOptions<BethanyDbContext> options) : base(options)
         {
             
         }
 
         public DbSet<Pie> Pies { get; set; }
+        public DbSet<Feedback> Feedbacks { get; set; }
     }
 }
