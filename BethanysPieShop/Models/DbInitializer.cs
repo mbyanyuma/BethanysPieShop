@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace BethanysPieShop.Models
 {
-    public static class PieDbInitializer
+    public static class DbInitializer
     {
-        public static void Seed(PieDbContext context)
+        public static void Seed(BethanyDbContext context)
         {
             if (!context.Pies.Any())
             {

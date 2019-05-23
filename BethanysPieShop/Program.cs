@@ -24,8 +24,8 @@ namespace BethanysPieShop
                 var services = scope.ServiceProvider;
                 try
                 {
-                    var context = services.GetRequiredService<PieDbContext>();
-                    PieDbInitializer.Seed(context);
+                    var context = services.GetRequiredService<BethanyDbContext>();
+                    DbInitializer.Seed(context);
                 }
                 catch (Exception)
                 {

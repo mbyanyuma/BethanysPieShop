@@ -7,21 +7,21 @@ namespace BethanysPieShop.Models
 {
     public class PieRepository : IPieRepository
     {
-        private readonly PieDbContext _pieDbContext;
+        private readonly BethanyDbContext _bethanyDbContext;
 
-        public PieRepository(PieDbContext pieDbContext)
+        public PieRepository(BethanyDbContext bethanyDbContext)
         {
-            _pieDbContext = pieDbContext;
+            _bethanyDbContext = bethanyDbContext;
         }
 
         public IEnumerable<Pie> GetAllPies()
         {
-            return _pieDbContext.Pies;
+            return _bethanyDbContext.Pies;
         }
 
         public Pie GetPieById(int pieId)
         {
-            return _pieDbContext.Pies.FirstOrDefault(p => p.Id == pieId);
+            return _bethanyDbContext.Pies.FirstOrDefault(p => p.Id == pieId);
         }
     }
 }
