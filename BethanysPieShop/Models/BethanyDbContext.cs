@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace BethanysPieShop.Models
 {
-    public class BethanyDbContext : DbContext
+    public class BethanyDbContext : IdentityDbContext<IdentityUser>
     {
         public BethanyDbContext(DbContextOptions<BethanyDbContext> options) : base(options)
         {

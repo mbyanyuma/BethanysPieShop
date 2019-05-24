@@ -47,6 +47,7 @@ namespace BethanysPieShop
 
             app.UseStatusCodePages();
             app.UseStaticFiles();
+            app.UseAuthentication();
 
             app.UseMvc(routes =>
             {
