@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using BethanysPieShop.Core.Models;
+using BethanysPieShop.Data.DataAccess;
+using BethanysPieShop.Data.Interfaces;
 
-namespace BethanysPieShop.Models
+namespace BethanysPieShop.Data.Repositories
 {
     public class FeedbackRepository : IFeedbackRepository
     {

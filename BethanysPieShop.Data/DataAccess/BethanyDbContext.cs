@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using BethanysPieShop.Core.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace BethanysPieShop.Models
+namespace BethanysPieShop.Data.DataAccess
 {
     public class BethanyDbContext : IdentityDbContext<IdentityUser>
     {

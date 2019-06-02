@@ -15,4 +15,9 @@
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BethanysPieShop.Core\BethanysPieShop.Core.csproj" />
+    <ProjectReference Include="..\BethanysPieShop.Data\BethanysPieShop.Data.csproj" />
+  </ItemGroup>
+
 </Project>
