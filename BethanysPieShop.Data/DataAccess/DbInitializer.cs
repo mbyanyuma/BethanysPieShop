@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Linq;
+using BethanysPieShop.Core.Models;
 
-namespace BethanysPieShop.Models
+namespace BethanysPieShop.Data.DataAccess
 {
     public static class DbInitializer
     {
